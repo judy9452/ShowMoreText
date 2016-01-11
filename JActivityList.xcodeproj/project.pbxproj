@@ -15,6 +15,9 @@
 		4EC441FD1C14145F005721AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC441FB1C14145F005721AF /* LaunchScreen.storyboard */; };
 		4EC442081C14145F005721AF /* JActivityListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC442071C14145F005721AF /* JActivityListTests.m */; };
 		4EC442131C14145F005721AF /* JActivityListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC442121C14145F005721AF /* JActivityListUITests.m */; };
+		4EEF184B1C158C25009B80BE /* TextListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF184A1C158C25009B80BE /* TextListCell.m */; };
+		4EEF184E1C158C40009B80BE /* TextEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF184D1C158C40009B80BE /* TextEntity.m */; };
+		4EEF18501C158CD8009B80BE /* TextInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 4EEF184F1C158CD8009B80BE /* TextInfo.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		4EC4420E1C14145F005721AF /* JActivityListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JActivityListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC442121C14145F005721AF /* JActivityListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JActivityListUITests.m; sourceTree = "<group>"; };
 		4EC442141C14145F005721AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EEF18491C158C25009B80BE /* TextListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextListCell.h; sourceTree = "<group>"; };
+		4EEF184A1C158C25009B80BE /* TextListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextListCell.m; sourceTree = "<group>"; };
+		4EEF184C1C158C40009B80BE /* TextEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEntity.h; sourceTree = "<group>"; };
+		4EEF184D1C158C40009B80BE /* TextEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEntity.m; sourceTree = "<group>"; };
+		4EEF184F1C158CD8009B80BE /* TextInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TextInfo.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,10 @@
 				4EC441F11C14145F005721AF /* AppDelegate.m */,
 				4EC441F31C14145F005721AF /* ViewController.h */,
 				4EC441F41C14145F005721AF /* ViewController.m */,
+				4EEF184C1C158C40009B80BE /* TextEntity.h */,
+				4EEF184D1C158C40009B80BE /* TextEntity.m */,
+				4EEF18491C158C25009B80BE /* TextListCell.h */,
+				4EEF184A1C158C25009B80BE /* TextListCell.m */,
 				4EC441F61C14145F005721AF /* Main.storyboard */,
 				4EC441F91C14145F005721AF /* Assets.xcassets */,
 				4EC441FB1C14145F005721AF /* LaunchScreen.storyboard */,
@@ -117,6 +129,7 @@
 		4EC441ED1C14145F005721AF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4EEF184F1C158CD8009B80BE /* TextInfo.json */,
 				4EC441EE1C14145F005721AF /* main.m */,
 			);
 			name = "Supporting Files";
@@ -243,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EEF18501C158CD8009B80BE /* TextInfo.json in Resources */,
 				4EC441FD1C14145F005721AF /* LaunchScreen.storyboard in Resources */,
 				4EC441FA1C14145F005721AF /* Assets.xcassets in Resources */,
 				4EC441F81C14145F005721AF /* Main.storyboard in Resources */,
@@ -270,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EEF184E1C158C40009B80BE /* TextEntity.m in Sources */,
 				4EC441F51C14145F005721AF /* ViewController.m in Sources */,
+				4EEF184B1C158C25009B80BE /* TextListCell.m in Sources */,
 				4EC441F21C14145F005721AF /* AppDelegate.m in Sources */,
 				4EC441EF1C14145F005721AF /* main.m in Sources */,
 			);
@@ -411,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = JActivityList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = juanmao.JActivityList;
@@ -422,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = JActivityList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = juanmao.JActivityList;
@@ -496,6 +514,7 @@
 				4EC442191C14145F005721AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EC4421A1C14145F005721AF /* Build configuration list for PBXNativeTarget "JActivityListTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +523,7 @@
 				4EC4421C1C14145F005721AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EC4421D1C14145F005721AF /* Build configuration list for PBXNativeTarget "JActivityListUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +532,7 @@
 				4EC4421F1C14145F005721AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
